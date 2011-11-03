@@ -1,3 +1,9 @@
+# revision 16099
+# category Package
+# catalog-ctan /macros/latex/contrib/emulateapj
+# catalog-date 2009-12-25 00:35:43 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-emulateapj
 Version:	20091225
 Release:	1
@@ -40,6 +46,7 @@ Journal.
 %doc %{_texmfdistdir}/doc/latex/emulateapj/README
 %doc %{_texmfdistdir}/doc/latex/emulateapj/sample.pdf
 %doc %{_texmfdistdir}/doc/latex/emulateapj/sample.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ Journal.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
