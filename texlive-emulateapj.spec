@@ -1,12 +1,12 @@
-# revision 16099
+# revision 28469
 # category Package
 # catalog-ctan /macros/latex/contrib/emulateapj
-# catalog-date 2009-12-25 00:35:43 +0100
+# catalog-date 2012-12-05 13:33:41 +0100
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-emulateapj
-Version:	20091225
-Release:	2
+Version:	20121205
+Release:	1
 Summary:	Produce output similar to that of APJ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/emulateapj
@@ -47,17 +47,3 @@ Journal.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20091225-2
-+ Revision: 751414
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20091225-1
-+ Revision: 718328
-- texlive-emulateapj
-- texlive-emulateapj
-- texlive-emulateapj
-- texlive-emulateapj
-
