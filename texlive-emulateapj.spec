@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-emulateapj
 Version:	20121205
-Release:	4
+Release:	5
 Summary:	Produce output similar to that of APJ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/emulateapj
