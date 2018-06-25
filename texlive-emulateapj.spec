@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-emulateapj
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Produce output similar to that of APJ
 Group:		Publishing
