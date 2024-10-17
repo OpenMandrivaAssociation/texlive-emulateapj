@@ -3,7 +3,7 @@ Version:	28469
 Release:	2
 Summary:	Produce output similar to that of APJ
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/emulateapj
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/emulateapj
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/emulateapj.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/emulateapj.doc.r%{version}.tar.xz
