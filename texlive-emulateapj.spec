@@ -1,6 +1,6 @@
 Name:		texlive-emulateapj
-Version:	28469
-Release:	2
+Version:	74166
+Release:	1
 Summary:	Produce output similar to that of APJ
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/emulateapj
