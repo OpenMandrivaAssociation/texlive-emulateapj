@@ -1,43 +1,22 @@
-Name:		texlive-emulateapj
-Version:	74166
+%global tl_name emulateapj
+%global tl_revision 74166
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
 Release:	1
 Summary:	Produce output similar to that of APJ
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/emulateapj
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/emulateapj.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/emulateapj.doc.r%{version}.tar.xz
+License:	lppl
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/emulateapj.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/emulateapj.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-A LaTeX class (based on current RevTeX) to produce preprints
-with the page layout similar to that of the Astrophysical
-Journal.
+A LaTeX class (based on current RevTeX) to produce preprints with the
+page layout similar to that of the Astrophysical Journal.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/emulateapj/emulateapj.cls
-%doc %{_texmfdistdir}/doc/latex/emulateapj/README
-%doc %{_texmfdistdir}/doc/latex/emulateapj/sample.pdf
-%doc %{_texmfdistdir}/doc/latex/emulateapj/sample.tex
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
